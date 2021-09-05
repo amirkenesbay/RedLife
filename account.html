@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>REDlife</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bootstrap.min.css" >
+  <link rel="stylesheet" href="css/custom.css" >
+  <link rel="stylesheet" href="css/media.css" >
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+</head>
+<body>
+  <header>
+    <div class="container header_container">
+<!--
+<div class="row">
+        <div class="header_logo col-0 col-lg-2">
+          <a class="header_logo_link" href="#">
+            <img class="header_logo_link_img" src="img/logo.png" alt="logo">
+          </a>
+        </div>
+        <nav class="navbar navbar-expand-lg col-12 col-lg-10 navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item red active text-decoration-none font-weight-bold" href="index.php">Главная</a>
+              <a class="nav-item text-decoration-none" href="corporative.html">О кооперативе</a>
+              <a class="nav-item text-decoration-none" href="#">Программы</a>
+              <a class="nav-item text-decoration-none" href="#">Контакты</a>
+              <div class="header_social">
+                <a class="nav-item header_social_link bg-red white" href="#">
+                  <i class="fab fa-telegram"></i>
+                </a>
+                <a class="nav-item header_social_link bg-red white" href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a class="nav-item header_social_link bg-red white" href="#">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <a class="nav-item header_social_link bg-red white" href="#">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+              <a class="nav-item text-decoration-none account bg-red font-weight-bold" href="account.php">Личный кабинет
+                <i class="far fa-user-circle"></i>
+              </a>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+-->
+      <div class="row">
+        <div class="header_logo col-0 col-lg-2">
+          <a class="header_logo_link" href="#">
+            <img class="header_logo_link_img" src="img/logo.png" alt="logo" width="160">
+          </a>
+        </div>
+        <nav class="navbar navbar-expand-lg col-12 col-lg-10 navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <div class="navbar-nav_links">
+<a class="nav-item text-decoration-none" href="index.php">Главная</a><a class="nav-item text-decoration-none" href="corporative.php">О кооперативе</a><a class="nav-item text-decoration-none" href="program.php">Программы</a><a class="nav-item text-decoration-none" href="contacts.php">Контакты</a>
+              </div>
+
+              <div class="header_social">
+                <a class="nav-item header_social_link bg-red white box-shad" href="#">
+                  <i class="fab fa-telegram"></i>
+                </a>
+                <a class="nav-item header_social_link bg-red white box-shad" href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a class="nav-item header_social_link bg-red white box-shad" href="#">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <a class="nav-item header_social_link bg-red white box-shad" href="#">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+              <a class="nav-item text-decoration-none account bg-red font-weight-bold box-shad" data-toggle="modal" data-target="#exampleModal" href="#">Кабинет
+                <i class="far fa-user-circle"></i>
+              </a>
+
+              <div class="modal fade register_modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+
+                    <div class="modal-body">
+<h5 class="modal-title" id="exampleModalLabel"></h5><a href="account.php">Кабинет</a><br><a href="exit.php">Выход</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </nav>
+      </div>	      </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="per_account">
+        <h2 class="title_gray font-weight-bold ">Личный кабинет</h2>
+        <div class="row per_account_section">
+
+	    <div class="per_account_section_side col-12 col-lg-3">
+            <a class="per_account_section_side_prev text-decoration-none" href="#">
+              <i class="fas fa-arrow-left"></i>
+              Вернуться к главному
+            </a>
+            <div class="per_account_section_side_info">
+              <a href="account.php" class="per_account_section_side_info_title red position-relative text-decoration-none">
+                <i class="far fa-user-circle"></i>
+                Данные
+              </a>
+              <a href="contracts.php" class="per_account_section_side_info_title position-relative text-decoration-none">
+                <i class="far fa-file"></i>
+                Договора
+              </a>
+              <a href="applications.php" class="per_account_section_side_info_title position-relative text-decoration-none">
+                <i class="far fa-file"></i>
+                Заявки
+              </a>
+              <a href="operation.php" class="per_account_section_side_info_title position-relative text-decoration-none">
+                <i class="far fa-credit-card"></i>
+                Операции
+              </a>
+              <a href="referals.php" class="per_account_section_side_info_title position-relative text-decoration-none">
+                <i class="fas fa-briefcase"></i>
+                Пайщики
+              </a>
+              <a href="account.php?razdel=history" class="per_account_section_side_info_title position-relative text-decoration-none">
+                <i class="far fa-chart-bar"></i>
+                История действии
+              </a>
+<div class="per_account_section_side_info"><a href="admin_cabinet.php" class="per_account_section_side_info_title position-relative text-decoration-none"><i class="far fa-chart-bar"></i>Общая по кооперативу</a><a href="admin_cabinet.php?razdel=client" class="per_account_section_side_info_title position-relative text-decoration-none"><i class="far fa-chart-bar"></i>Клиент</a><a href="admin_cabinet.php?razdel=dogovora" class="per_account_section_side_info_title position-relative text-decoration-none"><i class="far fa-chart-bar"></i>Договора</a><a href="admin_cabinet.php?razdel=application" class="per_account_section_side_info_title position-relative text-decoration-none"><i class="far fa-chart-bar"></i>Заявки</a><a href="admin_cabinet.php?razdel=payment" class="per_account_section_side_info_title position-relative text-decoration-none"><i class="far fa-chart-bar"></i>Платежи</a><a href="admin_cabinet.php?razdel=bal_all" class="per_account_section_side_info_title position-relative text-decoration-none"><i class="far fa-chart-bar"></i>Балы</a></div>
+            </div>
+        </div>
+
+          <div class="per_account_section_main col-12 col-lg-9">
+              <!-- Весь per_account_section_main_name font-weight-bold класс поменять -->
+            <div class="per_account_section_main_name font-weight-bold">
+                <img src="img/icons/account.png" alt="ID" class="accout_id">
+Кенесбай Амир <br>
+<img src="img/icons/card.png" alt="ID" class="card_id"> ИИН: 111111111111
+			</div>
+            <div class="per_account_section_main_block">
+            <!-- Класс <p class="per_account_section_main_block_title"> нужно заменить-->
+              <p class="per_account_section_main_block_title"><img src="img/icons/calendar.png" alt="ID" class="data_icons"> Дата рожления: </p>
+              <p class="per_account_section_main_block_desc">
+2020-11-13              </p>
+            </div>
+
+            <div class="per_account_section_main_block">
+                <!-- Класс <p class="per_account_section_main_block_title"> нужно заменить-->
+              <p class="per_account_section_main_block_title"><img src="img/icons/home.png" alt="ID" class="data_icons"> Семейное положение: </p>
+              <p class="per_account_section_main_block_desc">
+женат/замужем              </p>
+            </div>
+
+            <div class="per_account_section_main_block">
+                <!-- Класс <p class="per_account_section_main_block_title"> нужно заменить-->
+              <p class="per_account_section_main_block_title"><img src="img/icons/location.png" alt="ID" class="data_icons"> Адрес прописки: </p>
+              <p class="per_account_section_main_block_desc">
+Астана              </p>
+            </div>
+
+            <div class="per_account_section_main_block">
+                <!-- Класс <p class="per_account_section_main_block_title"> нужно заменить-->
+              <p class="per_account_section_main_block_title"><img src="img/icons/location1.png" alt="ID" class="data_icons"> Адрес проживания: </p>
+              <p class="per_account_section_main_block_desc">
+Астана              </p>
+            </div>
+
+            <div class="per_account_section_main_block">
+                <!-- Класс <p class="per_account_section_main_block_title"> нужно заменить-->
+              <p class="per_account_section_main_block_title"><img src="img/icons/work.svg" alt="ID" class="data_icons"> Место работы: </p>
+              <p class="per_account_section_main_block_desc">
+              </p>
+            </div>
+
+            <div class="per_account_section_main_block">
+                <!-- Класс <p class="per_account_section_main_block_title"> нужно заменить-->
+              <p class="per_account_section_main_block_title"><img src="img/icons/city.svg" alt="ID" class="data_icons"> Город: </p>
+              <p class="per_account_section_main_block_desc">
+Астана              </p>
+            </div>
+
+            <div class="per_account_section_main_block">
+                <!-- Класс <p class="per_account_section_main_block_title"> нужно заменить-->
+              <p class="per_account_section_main_block_title"><img src="img/icons/phone.svg" alt="ID" class="data_icons"> Телефон: </p>
+              <p class="per_account_section_main_block_desc">
+77472251699              </p>
+            </div>
+
+            <div class="per_account_section_main_block">
+                <!-- Класс <p class="per_account_section_main_block_title"> нужно заменить-->
+              <p class="per_account_section_main_block_title"><img src="img/icons/whatsapp.svg" alt="ID" class="data_icons"> Whatsapp: </p>
+              <p class="per_account_section_main_block_desc">
+77472251699              </p>
+            </div>
+
+            <div class="per_account_section_main_block">
+                <!-- Класс <p class="per_account_section_main_block_title"> нужно заменить-->
+              <p class="per_account_section_main_block_title"><img src="img/icons/mail.svg" alt="ID" class="data_icons"> Email: </p>
+              <p class="per_account_section_main_block_desc">
+amirkenesbay@gmail.com              </p>
+            </div>
+
+            <div class="per_account_section_main_block">
+                <!-- Класс <p class="per_account_section_main_block_title"> нужно заменить-->
+              <p class="per_account_section_main_block_title"><img src="img/icons/picture.svg" alt="ID" class="data_icons"> Скан или фото удостовениея с 2-х сторон, и свидетельство о браке в случае состаяния в браке: </p>
+              <p class="per_account_section_main_block_desc">
+  <form method="post" enctype="multipart/form-data">
+<!-- Изменил весь input -->
+ <input type="file" name="picture" class="input_link bg-red red font-weight-bold text-decoration-none white box-shad d-block aos-init aos-animate">
+ <br>
+ <!-- В label добавил <i class="fas fa-download"></i> перед "Тип загрузки"-->
+ <label><img src="img/icons/download.svg" alt="ID" class="data_icons"> Тип загрузки</label>
+ <br>
+ <!-- И тут же изменил весь input-->
+ <input type="submit" value="Загрузить" class="input_link bg-red red font-weight-bold text-decoration-none white box-shad d-block aos-init aos-animate">
+  </form>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer_container">
+        <div class="row">
+          <div class="col-12 col-lg-6 footer_container_logo">
+            <a class="header_logo_link" href="#">
+              <img class="header_logo_link_img" src="img/logo.png" alt="logo">
+            </a>
+          </div>
+          <div class="col-12 col-lg-2 footer_container_weare">
+            <p class="footer_container_weare_title text-uppercase font-weight-bold">
+              Мы в сети
+            </p>
+            <a href="#" class="footer_container_weare_sub text-decoration-none">
+              <i class="red fab fa-youtube"></i>
+              Redlife
+            </a>
+            <a href="#" class="footer_container_weare_sub text-decoration-none">
+              <i class="red fab fa-instagram"></i>
+              Redlife
+            </a>
+          </div>
+          <div class="col-12 col-lg-2 footer_container_weare">
+            <p class="footer_container_weare_title text-uppercase font-weight-bold">
+              Информация
+            </p>
+            <a href="index.php" class="footer_container_weare_sub text-decoration-none">
+              Главная
+            </a>
+            <a href="corporative.php" class="footer_container_weare_sub text-decoration-none">
+              О кооперативе
+            </a>
+			<a href="program.php" class="footer_container_weare_sub text-decoration-none">
+              Программы
+            </a>
+			<a href="contacts.php" class="footer_container_weare_sub text-decoration-none">
+              Контакты
+            </a>
+          </div>
+          <div class="col-12 col-lg-2 footer_container_weare">
+            <p class="footer_container_weare_title text-uppercase font-weight-bold">
+              адрес
+            </p>
+            <p class="footer_container_weare_sub footer_container_weare_sub_adress"> РК, ЗКО, г.Уральск, ул. Курмангазы 96 (уг. ул. Сарайшык, ТД «Кристалл»), офис 15. <span></span></p>
+          </div>
+        </div>
+      </div>
+<!--      <div class="footer_lang">
+        <a href="#" class="footer_lang_kaz text-decoration-none">Казакша</a>
+        <a href="#" class="footer_lang_rus text-decoration-none">Русский</a>
+      </div> -->
+    </div>
+  </footer>	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

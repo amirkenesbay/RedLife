@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>R</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bootstrap.min.css" >
+  <link rel="stylesheet" href="css/custom.css" >
+  <link rel="stylesheet" href="css/media.css" >
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+</head>
+<body>
+  <header>
+    <div class="container header_container">
+
+<!--
+<div class="row">
+        <div class="header_logo col-0 col-lg-2">
+          <a class="header_logo_link" href="#">
+            <img class="header_logo_link_img" src="img/logo.png" alt="logo">
+          </a>
+        </div>
+        <nav class="navbar navbar-expand-lg col-12 col-lg-10 navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item red active text-decoration-none font-weight-bold" href="index.php">Главная</a>
+              <a class="nav-item text-decoration-none" href="corporative.html">О кооперативе</a>
+              <a class="nav-item text-decoration-none" href="#">Программы</a>
+              <a class="nav-item text-decoration-none" href="#">Контакты</a>
+              <div class="header_social">
+                <a class="nav-item header_social_link bg-red white" href="#">
+                  <i class="fab fa-telegram"></i>
+                </a>
+                <a class="nav-item header_social_link bg-red white" href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a class="nav-item header_social_link bg-red white" href="#">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <a class="nav-item header_social_link bg-red white" href="#">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+              <a class="nav-item text-decoration-none account bg-red font-weight-bold" href="account.php">Личный кабинет
+                <i class="far fa-user-circle"></i>
+              </a>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+-->
+      <div class="row">
+        <div class="header_logo col-0 col-lg-2">
+          <a class="header_logo_link" href="#">
+            <img class="header_logo_link_img" src="img/logo.png" alt="logo" width="160">
+          </a>
+        </div>
+        <nav class="navbar navbar-expand-lg col-12 col-lg-10 navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <div class="navbar-nav_links">
+<a class="nav-item text-decoration-none" href="index.php">Главная</a><a class="nav-item text-decoration-none" href="corporative.php">О кооперативе</a><a class="nav-item text-decoration-none" href="program.php">Программы</a><a class="nav-item text-decoration-none" href="contacts.php">Контакты</a>
+              </div>
+
+              <div class="header_social">
+                <a class="nav-item header_social_link bg-red white box-shad" href="#">
+                  <i class="fab fa-telegram"></i>
+                </a>
+                <a class="nav-item header_social_link bg-red white box-shad" href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a class="nav-item header_social_link bg-red white box-shad" href="#">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <a class="nav-item header_social_link bg-red white box-shad" href="#">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+              <a class="nav-item text-decoration-none account bg-red font-weight-bold box-shad" data-toggle="modal" data-target="#exampleModal" href="#">Кабинет
+                <i class="far fa-user-circle"></i>
+              </a>
+
+              <div class="modal fade register_modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+
+                    <div class="modal-body">
+<h5 class="modal-title" id="exampleModalLabel"></h5><a href="account.php">Кабинет</a><br><a href="exit.php">Выход</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="per_account">
+        <h2 class="title_gray font-weight-bold ">Личный кабинет</h2>
+        <div class="row per_account_section">
+
+	    <div class="per_account_section_side col-12 col-lg-3">
+            <a class="per_account_section_side_prev text-decoration-none" href="#">
+              <i class="fas fa-arrow-left"></i>
+              Вернуться к главному
+            </a>
+            <div class="per_account_section_side_info">
+              <a href="account.php" class="per_account_section_side_info_title position-relative text-decoration-none">
+                <i class="far fa-user-circle"></i>
+                Данные
+              </a>
+              <a href="contracts.php" class="per_account_section_side_info_title red position-relative text-decoration-none">
+                <i class="far fa-file"></i>
+                Договора
+              </a>
+              <a href="applications.php" class="per_account_section_side_info_title position-relative text-decoration-none">
+                <i class="far fa-file"></i>
+                Заявки
+              </a>
+              <a href="operation.php" class="per_account_section_side_info_title position-relative text-decoration-none">
+                <i class="far fa-credit-card"></i>
+                Операции
+              </a>
+              <a href="referals.php" class="per_account_section_side_info_title position-relative text-decoration-none">
+                <i class="fas fa-briefcase"></i>
+                Пайщики
+              </a>
+              <a href="account.php?razdel=history" class="per_account_section_side_info_title position-relative text-decoration-none">
+                <i class="far fa-chart-bar"></i>
+                История действии
+              </a>
+<div class="per_account_section_side_info"><a href="admin_cabinet.php" class="per_account_section_side_info_title position-relative text-decoration-none"><i class="far fa-chart-bar"></i>Общая по кооперативу</a><a href="admin_cabinet.php?razdel=client" class="per_account_section_side_info_title position-relative text-decoration-none"><i class="far fa-chart-bar"></i>Клиент</a><a href="admin_cabinet.php?razdel=dogovora" class="per_account_section_side_info_title position-relative text-decoration-none"><i class="far fa-chart-bar"></i>Договора</a><a href="admin_cabinet.php?razdel=application" class="per_account_section_side_info_title position-relative text-decoration-none"><i class="far fa-chart-bar"></i>Заявки</a><a href="admin_cabinet.php?razdel=payment" class="per_account_section_side_info_title position-relative text-decoration-none"><i class="far fa-chart-bar"></i>Платежи</a><a href="admin_cabinet.php?razdel=bal_all" class="per_account_section_side_info_title position-relative text-decoration-none"><i class="far fa-chart-bar"></i>Балы</a><a href="admin_cabinet.php?razdel=reestr" class="per_account_section_side_info_title position-relative text-decoration-none"><i class="far fa-chart-bar"></i>Реестр </a></div>
+            </div>
+        </div>
+
+          <div class="per_account_section_main col-12 col-lg-9">
+            <div class="per_account_section_main_name font-weight-bold">
+			<i class="fas fa-user-circle"></i>
+Кенесбай Амир <br><i class="fas fa-id-card"></i> ИИН111111111111
+			</div>
+            <div class="account_contracts row">
+<div class="account_contracts_block account_contracts_block_red col-12 col-lg-4"><div class="account_contracts_block_section"><p class="account_contracts_block_title position-relative">Номер договора<i class="fas fa-home red"></i></p><p class="account_contracts_block_number font-weight-bold">RL/DSO/9000005 </p></div><div class="account_contracts_block_section"><p class="account_contracts_block_title position-relative">Дата</p><p class="account_contracts_block_number font-weight-bold">17.11.2020</p></div><div class="account_contracts_block_section"><p class="account_contracts_block_title position-relative">Статус</p><p class="account_contracts_block_number font-weight-bold">активен</p></div><div class="account_contracts_block_section"><p class="account_contracts_block_number font-weight-bold position-relative"><span class="account_contracts_block_number_icons"><a href="?id_dogovor_dso=5&ppage=1"><i class="fas fa-info-circle"></i></a><a href="?id_dogovor_dso=5&ppage=2"><i class="fas fa-file-alt"></i></a><a href="?id_dogovor_dso=5&ppage=3"><i class="far fa-file-code"></i></a></span><br></p></div></div><div class="account_contracts_block account_contracts_block_red col-12 col-lg-4"><div class="account_contracts_block_section"><p class="account_contracts_block_title position-relative">Номер договора<i class="fas fa-home red"></i></p><p class="account_contracts_block_number font-weight-bold">RL/DP/1000005 </p></div><div class="account_contracts_block_section"><p class="account_contracts_block_title position-relative">Дата</p><p class="account_contracts_block_number font-weight-bold">17.11.2020</p></div><div class="account_contracts_block_section"><p class="account_contracts_block_title position-relative">Статус</p><p class="account_contracts_block_number font-weight-bold">на подписи у администрации</p></div><div class="account_contracts_block_section"><p class="account_contracts_block_title position-relative">Баллы</p><p class="account_contracts_block_number font-weight-bold position-relative">0<span class="account_contracts_block_number_icons"><a href="?id_dogovor=5&ppage=1"><i class="fas fa-info-circle"></i></a><a href="?id_dogovor=5&ppage=2"><i class="fas fa-file-alt"></i></a><a href="?id_dogovor=5&ppage=3"><i class="far fa-file-code"></i></a></span></p></div></div>			<div class="account_contracts_block col-12 col-lg-4">
+                <div class="account_contracts_block_section">
+                  <p class="account_contracts_block_title position-relative">
+
+                  </p>
+                  <p class="account_contracts_block_number font-weight-bold"></p>
+                </div>
+
+                <div class="account_contracts_block_section">
+                  <p class="account_contracts_block_title position-relative"></p>
+                  <p class="account_contracts_block_number font-weight-bold"></p>
+                </div>
+
+<div class="account_contracts_block_section"><p class="account_contracts_block_number font-weight-bold position-relative">
+    <!-- Добавил класс add_dogovor в элементе <a href="add_dogovor.php" class="add_dogovor">-->
+    <a href="add_dogovor.php" class="add_dogovor">
+        <!-- Тут изменить <i class="fas fa-file-signature"></i> Cоздать договор -->
+        <i class="fas fa-file-signature"></i> Cоздать договор
+    </a></p></div>                <div class="account_contracts_block_section">
+                  <p class="account_contracts_block_title position-relative"></p>
+                  <p class="account_contracts_block_number font-weight-bold"></p>
+                </div>
+
+                <div class="account_contracts_block_section">
+                  <p class="account_contracts_block_title position-relative"></p>
+                  <p class="account_contracts_block_number font-weight-bold position-relative">
+                  </p>
+                </div>
+              </div>
+	</div>
+<!--
+                <div class="account_contracts_block_section">
+                  <p class="account_contracts_block_title position-relative">Номер договора
+                    <i class="fas fa-home red"></i>
+                  </p>
+                  <p class="account_contracts_block_number font-weight-bold">123456789</p>
+                </div>
+
+                <div class="account_contracts_block_section">
+                  <p class="account_contracts_block_title position-relative">Дата</p>
+                  <p class="account_contracts_block_number font-weight-bold">2 Мая 2020</p>
+                </div>
+
+                <div class="account_contracts_block_section">
+                  <p class="account_contracts_block_title position-relative">Статус</p>
+                  <p class="account_contracts_block_number font-weight-bold">Активный</p>
+                </div>
+
+                <div class="account_contracts_block_section">
+                  <p class="account_contracts_block_title position-relative">Баллы</p>
+                  <p class="account_contracts_block_number font-weight-bold position-relative">1254
+                    <span class="account_contracts_block_number_icons">
+                      <a href="#"><i class="fas fa-info-circle"></i></a>
+                      <a href="#"><i class="fas fa-file-alt"></i></a>
+                      <a href="#"><i class="far fa-file-code"></i></a>
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="account_contracts_block col-12 col-lg-4">
+                <div class="account_contracts_block_section">
+                  <p class="account_contracts_block_title position-relative">Номер договора
+                    <i class="fas fa-car red"></i>
+                  </p>
+                  <p class="account_contracts_block_number font-weight-bold">123456789</p>
+                </div>
+
+                <div class="account_contracts_block_section">
+                  <p class="account_contracts_block_title position-relative">Дата</p>
+                  <p class="account_contracts_block_number font-weight-bold">2 Мая 2020</p>
+                </div>
+
+                <div class="account_contracts_block_section">
+                  <p class="account_contracts_block_title position-relative">Статус</p>
+                  <p class="account_contracts_block_number font-weight-bold">Активный</p>
+                </div>
+
+                <div class="account_contracts_block_section">
+                  <p class="account_contracts_block_title position-relative">Баллы</p>
+                  <p class="account_contracts_block_number font-weight-bold position-relative">1254
+                    <span class="account_contracts_block_number_icons">
+                      <i class="fas fa-info-circle"></i>
+                      <i class="fas fa-file-alt"></i>
+                      <i class="far fa-file-code"></i>
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="account_contracts_block col-12 col-lg-4">
+                <div class="account_contracts_block_section">
+                  <p class="account_contracts_block_title position-relative">Номер договора
+                    <i class="fas fa-home red"></i>
+                  </p>
+                  <p class="account_contracts_block_number font-weight-bold">123456789</p>
+                </div>
+
+                <div class="account_contracts_block_section">
+                  <p class="account_contracts_block_title position-relative">Дата</p>
+                  <p class="account_contracts_block_number font-weight-bold">2 Мая 2020</p>
+                </div>
+
+                <div class="account_contracts_block_section">
+                  <p class="account_contracts_block_title position-relative">Статус</p>
+                  <p class="account_contracts_block_number font-weight-bold">Активный</p>
+                </div>
+
+                <div class="account_contracts_block_section">
+                  <p class="account_contracts_block_title position-relative">Баллы</p>
+                  <p class="account_contracts_block_number font-weight-bold position-relative">1254
+                    <span class="account_contracts_block_number_icons">
+                      <i class="fas fa-info-circle"></i>
+                      <i class="fas fa-file-alt"></i>
+                      <i class="far fa-file-code"></i>
+                    </span>
+                  </p>
+                </div>
+                <a class="white bg-red apply text-decoration-none" href="#">Подать заявку</a>
+              </div>
+			  -->
+
+
+			<!--
+            <p class="per_account_section_main_sub_title font-weight-bold">
+              Доп. сведение о договоре
+            </p>
+            <div class="per_account_section_main_block">
+              <p class="per_account_section_main_block_title">Номер договора</p>
+              <p class="per_account_section_main_block_desc">
+RL/DP/1000005              </p>
+            </div>
+
+            <div class="per_account_section_main_block">
+              <p class="per_account_section_main_block_title">Программа</p>
+              <p class="per_account_section_main_block_desc">
+                Квартира
+              </p>
+            </div>
+
+            <div class="per_account_section_main_block">
+              <p class="per_account_section_main_block_title">Дата регистр.</p>
+              <p class="per_account_section_main_block_desc">
+17.11.2020              </p>
+            </div>
+
+            <div class="per_account_section_main_block">
+              <p class="per_account_section_main_block_title">Макс. выделяемая сумма</p>
+              <p class="per_account_section_main_block_desc">
+10000000              </p>
+            </div>
+
+            <div class="per_account_section_main_block">
+              <p class="per_account_section_main_block_title">Вст. взном</p>
+              <p class="per_account_section_main_block_desc">
+                2000
+              </p>
+            </div>
+
+            <div class="per_account_section_main_block">
+              <p class="per_account_section_main_block_title">Енм</p>
+              <p class="per_account_section_main_block_desc">
+                +Оплата
+              </p>
+            </div>
+
+            <div class="per_account_section_main_block">
+              <p class="per_account_section_main_block_title">Срок ожидания</p>
+              <p class="per_account_section_main_block_desc">
+                По умолчанию
+              </p>
+            </div>
+
+            <div class="per_account_section_main_block">
+              <p class="per_account_section_main_block_title">Статус</p>
+              <p class="per_account_section_main_block_desc">
+                Активный
+              </p>
+            </div>
+-->
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer_container">
+        <div class="row">
+          <div class="col-12 col-lg-6 footer_container_logo">
+            <a class="header_logo_link" href="#">
+              <img class="header_logo_link_img" src="img/logo.png" alt="logo">
+            </a>
+          </div>
+          <div class="col-12 col-lg-2 footer_container_weare">
+            <p class="footer_container_weare_title text-uppercase font-weight-bold">
+              Мы в сети
+            </p>
+            <a href="#" class="footer_container_weare_sub text-decoration-none">
+              <i class="red fab fa-youtube"></i>
+              Redlife
+            </a>
+            <a href="#" class="footer_container_weare_sub text-decoration-none">
+              <i class="red fab fa-instagram"></i>
+              Redlife
+            </a>
+          </div>
+          <div class="col-12 col-lg-2 footer_container_weare">
+            <p class="footer_container_weare_title text-uppercase font-weight-bold">
+              Информация
+            </p>
+            <a href="index.php" class="footer_container_weare_sub text-decoration-none">
+              Главная
+            </a>
+            <a href="corporative.php" class="footer_container_weare_sub text-decoration-none">
+              О кооперативе
+            </a>
+			<a href="program.php" class="footer_container_weare_sub text-decoration-none">
+              Программы
+            </a>
+			<a href="contacts.php" class="footer_container_weare_sub text-decoration-none">
+              Контакты
+            </a>
+          </div>
+          <div class="col-12 col-lg-2 footer_container_weare">
+            <p class="footer_container_weare_title text-uppercase font-weight-bold">
+              адрес
+            </p>
+            <p class="footer_container_weare_sub footer_container_weare_sub_adress"> РК, ЗКО, г.Уральск, ул. Курмангазы 96 (уг. ул. Сарайшык, ТД «Кристалл»), офис 15. <span></span></p>
+          </div>
+        </div>
+      </div>
+<!--      <div class="footer_lang">
+        <a href="#" class="footer_lang_kaz text-decoration-none">Казакша</a>
+        <a href="#" class="footer_lang_rus text-decoration-none">Русский</a>
+      </div> -->
+    </div>
+  </footer>	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
